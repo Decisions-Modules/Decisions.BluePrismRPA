@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decisions.BluePrismRPA", "Decisions.BluePrismRPA\Decisions.BluePrismRPA.csproj", "{D1075A7A-5C75-4CDF-B33C-71F922E04D0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decisions.BluePrismRPA.TestSuit", "Decisions.BluePrismRPA.TestSuit\Decisions.BluePrismRPA.TestSuit.csproj", "{666DBBD9-06AF-4D89-89D4-B8749D59599F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1075A7A-5C75-4CDF-B33C-71F922E04D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1075A7A-5C75-4CDF-B33C-71F922E04D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1075A7A-5C75-4CDF-B33C-71F922E04D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1075A7A-5C75-4CDF-B33C-71F922E04D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{666DBBD9-06AF-4D89-89D4-B8749D59599F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{666DBBD9-06AF-4D89-89D4-B8749D59599F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{666DBBD9-06AF-4D89-89D4-B8749D59599F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{666DBBD9-06AF-4D89-89D4-B8749D59599F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDF2DE06-EA58-43D0-B984-D72EEDC21E14}
+	EndGlobalSection
+EndGlobal
