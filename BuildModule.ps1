@@ -171,8 +171,15 @@ Write-Output "Module.Modified.xml should now exist with correct paths.  Please c
 Write-Output "Compiling Project by build.proj, or by .sln file."
 $compiletarget = GetCompileTarget $basepath
 
-Start-Process -Wait -FilePath "$msbuild" -Args "$compiletarget" -WorkingDirectory "." -RedirectStandardOutput "BuildModule.ps1.log" -RedirectStandardError "BuildModule.ps1.error"
+$process = Start-Process -Wait -FilePath "$msbuild" -Args "$compiletarget" -WorkingDirectory "." -RedirectStandardOutput "BuildModule.ps1.log" -RedirectStandardError "BuildModule.ps1.error" -PassThru
+
+if($process.ExitCode -ne 0)
+{
+    Write-Output "Building error occurred"
+    exit
+}
 
 StopHostManager
 CopyModule($basePath)
 StartHostManager
+
